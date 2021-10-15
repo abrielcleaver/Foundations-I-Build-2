@@ -16,4 +16,7 @@ function render(food) {
     foodCard.append(foodImage, foodName);
     return foodCard;
 }
-
+for (let list of food) {
+    const foodItems = render(list);
+    foodList.appendChild(foodItems);
+}
